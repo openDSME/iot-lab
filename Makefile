@@ -32,6 +32,11 @@ setup-riot: parts/RIOT
 parts/RIOT:
 	git clone $(GITHUB_URL)RIOT-OS/RIOT.git $@
 
+parts/contiki:
+	git clone $(GITHUB_URL)openDSME/contiki.git $@
+
+parts/openlab:
+	git clone $(GITHUB_URL)openDSME/openlab.git $@
 
 # IoT-Lab repositories
 $(addprefix setup-, $(IOTLAB_REPOS)): setup-%: parts/%
