@@ -33,7 +33,7 @@ parts/RIOT:
 	git clone $(GITHUB_URL)RIOT-OS/RIOT.git $@
 
 parts/contiki:
-	git clone $(GITHUB_URL)openDSME/contiki.git $@
+	git clone $(GITHUB_URL)openDSME/contiki.git --branch dsme $@ 
 
 parts/openlab:
 	git clone $(GITHUB_URL)openDSME/openlab.git $@
